@@ -1,0 +1,33 @@
+.is-center {
+  text-align: center;
+}
+
+hr {
+  margin: 3em auto;
+}
+
+table.table th {
+  text-align: center;
+}
+
+h1.header {
+  margin: 1em auto;
+}
+
+tr:nth-child(odd) {
+  background: #e6e6e6;
+}
+
+th {
+  background: #6bbff1;
+}
+
+.panel-default>.panel-heading {
+  background-color: #005486;
+  color: #fff;
+  font-weight: bold;
+}
+
+.carousel {
+  margin:3em auto;
+}

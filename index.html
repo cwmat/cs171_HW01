@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Homework 01</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="row">
+      <div class="col-md-12 is-center">
+        <h1 class="header">CS171 - Visualization Homework 01</h1>
+      </div>
+    </div>
+
+    <!-- GHI Table -->
+    <div class="row">
+      <div class="col-md-12 is-center">
+        <div class="panel panel-default">
+          <div class="panel-heading">Global Hunger Index (GHI) by Country</div>
+          <div class="panel-body">
+            <p>The Global Hunger Index (GHI) is designed to comprehensively measure and track hunger globally and by country and region. Calculated each year by the International Food Policy Research Institute (IFPRI), the GHI highlights successes and failures in hunger reduction and provides insights into the drivers of hunger. (IFPRI, 2015)</p>
+          </div>
+
+          <!-- Table -->
+          <table class="table sortable">
+            <tr>
+              <th>
+                Country
+              </th>
+              <th>
+                1990
+              </th>
+              <th>
+                2000
+              </th>
+              <th>
+                2014
+              </th>
+            </tr>
+            <tr>
+              <td>
+                Central African Republic
+              </td>
+              <td>
+                51.9
+              </td>
+              <td>
+                51.4
+              </td>
+              <td>
+                46.9
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Chad
+              </td>
+              <td>
+                65
+              </td>
+              <td>
+                52
+              </td>
+              <td>
+                46.4
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Haiti
+              </td>
+              <td>
+                52.1
+              </td>
+              <td>
+                42.8
+              </td>
+              <td>
+                37.3
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Madagascar
+              </td>
+              <td>
+                44.8
+              </td>
+              <td>
+                44.1
+              </td>
+              <td>
+                36.3
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Sierra Leone
+              </td>
+              <td>
+                58.8
+              </td>
+              <td>
+                53.5
+              </td>
+              <td>
+                38.9
+              </td>
+            </tr>
+            <tr>
+              <td>
+                East Timor
+              </td>
+              <td>
+                -
+              </td>
+              <td>
+                -
+              </td>
+              <td>
+                40.7
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Zambia
+              </td>
+              <td>
+                47
+              </td>
+              <td>
+                50.9
+              </td>
+              <td>
+                41.1
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Good & Bad Vis -->
+    <div class="row">
+      <div class="col-md-12 is-center">
+        <h1>The Good, the Bad, and the Ugly...</h1>
+      </div>
+      <!-- Carousel Start -->
+      <div class="col-md-12 carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="http://i.imgur.com/rcgcYfI.jpg" alt="ESRI Tapestry Segmentation Map" style="height: 400px;">
+            </div>
+
+            <div class="item">
+              <img src="http://i.imgur.com/N2SdGN1.jpg" alt="Who is fighting whom in Syria? graphic." style="height: 400px;">
+            </div>
+
+            <div class="item">
+              <img src="http://aschmann.net/AmEng/index_collection/AmericanEnglishDialects.png" alt="Dialect Map" style="height: 400px;">
+            </div>
+
+            <div class="item">
+              <img src="http://a2.files.readwrite.com/image/upload/c_fit,cs_srgb,w_620/MTIyNDM4MzQ3MjA0MzYyODU0.png" alt="Twitter Pie Chart"  style="height: 400px;">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <!-- Carousel End -->
+      <div class="col-md-12">
+        <h2>The Good</h2>
+      </div>
+      <!-- Example 1 -->
+      <div class="col-md-12">
+        <a href="http://www.esri.com/library/fliers/pdfs/tapestry_segmentation.pdf" target="_blank">
+          <h3>Tapestry Segmentation</h3>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <div>
+          <a href="http://www.esri.com/library/fliers/pdfs/tapestry_segmentation.pdf" target="_blank">
+            <img src="http://i.imgur.com/rcgcYfI.jpg" alt="ESRI Tapestry Segmentation Map" class="img-responsive"/>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div>
+          <h4>Summary</h4>
+          <p>
+            Tapestry Segmentation is a method of market segmentation that breaks consumers into one of 68 distinct markets.  The data that fuel the visualization are from socioeconomic and dfemographic data from the U.S. Census Bureau.  This thumbnail really does not do it justice.  Click to see the full image!
+          </p>
+          <h4>Design Choices</h4>
+          <ul>
+            <li>Spatial data points are randomly distributed by Census block group to create a dot density map.</li>
+            <li>Simple black background is used to provide stark constrast to a plethora of virbant colors.</li>
+            <li>Despite having 68 distinct markets to visualize the designers split the market categories into 14 overarching parent categories which are color coded on the map. Colors then link to/are supported by more in-depth text and table content.</li>
+            <li>Other than county boundaries, no other geographic features are utilized.  The map is purely driven by the data points.</li>
+          </ul>
+          <h4>Reasoning for "Good" Designation</h4>
+          <ul>
+            <li>I love maps!</li>
+            <li>More over, I really like when maps are purely data driven with little need for reference layers.</li>
+            <li>The bright colors and stark background contrast really catch the eye.  Additionally, there is so much going on on the full poster and yet the eye naturally is grabbed by the map and travels to the supporting tables.</li>
+            <li>The content really makes you want to research the market categories and figure out which one you fit in to.</li>
+          </ul>
+          <h4>Purpose</h4>
+          <ul>
+            <li>The desinger wanted to display the findings of socioeconomic/demographic research.</li>
+            <li>I believe they succeeded in that they were able to put together a compelling and comprehensive depiction of what seems like very in-depth analysis.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Example 2 -->
+      <div class="col-md-12">
+        <a href="http://www.slate.com/blogs/the_slatest/2015/10/06/syrian_conflict_relationships_explained.html" target="_blank">
+          <h3>Who is Fighting Whom in Syria?</h3>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <div>
+          <a href="http://www.slate.com/blogs/the_slatest/2015/10/06/syrian_conflict_relationships_explained.html">
+            <img src="http://i.imgur.com/N2SdGN1.jpg" alt="Who is fighting whom in Syria? graphic." class="img-responsive"/>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div>
+          <h4>Summary</h4>
+          <p>
+            A graphic showing a pairwise style table of the entities involved in the Syrian Civil War and their relationship (friendly, hostile, complicated) to one another.
+          </p>
+          <h4>Design Choices</h4>
+          <ul>
+            <li>Very simple layout using a table to display relations among warring entities in Syria</li>
+            <li>Positional encodings are used among rows and columns and visual color encodings are used to describe the relationship between entities.</li>
+          </ul>
+          <h4>Reasoning for "Good" Designation</h4>
+          <ul>
+            <li>I feel that while simple, the table conveys a very complicated topic and does it well.</li>
+            <li>Data points are elaborated on in the live version (click the image or title) and summaries about each relationship are displayed.</li>
+          </ul>
+          <h4>Purpose</h4>
+          <ul>
+            <li>The desinger aimed to encode a very complex situation into a visualization to better explain the setting in Syria.</li>
+            <li>Even though the table is simple, the sheer number of colums, rows, and associated smiley faces can be a bit overbearing at first.  I feel like this complexity further enforces the designer/author's point that the situation in Syria is very convoluted.</li>
+            <li>Without the interactive component though this visualization would not be as strong, in my opnion.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- The Bad -->
+      <div class="col-md-12">
+        <h2>The Bad</h2>
+      </div>
+      <!-- Example 1 -->
+      <div class="col-md-12">
+        <a href="http://aschmann.net/AmEng/#LargeMap2Left" target="_blank">
+          <h3>Dialect Map</h3>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <div>
+          <a href="http://aschmann.net/AmEng/#LargeMap2Left" target="_blank">
+            <img src="http://aschmann.net/AmEng/index_collection/AmericanEnglishDialects.png" class="img-responsive" alt="Dialect Map - North America"/>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div>
+          <h4>Summary</h4>
+          <p>
+            This map was created by a hobbyist so I don't really want to be hard on them but this map exemplifies an "information overload" and is meant to show dialects throughout North America.
+          </p>
+          <h4>Design Choices</h4>
+          <ul>
+            <li>The map is displayed using several hues and textures (hatching patterns) to describe data.</li>
+            <li>Several legends and text boxes serve to guide the reader throught the map.</li>
+          </ul>
+          <h4>Reasoning for "Bad" Designation</h4>
+          <ul>
+            <li>This map overloads the reader.</li>
+            <li>While there are several text boxes that describe how to read the map it distracts from the purpose and forces the reader to "become an expert" on the reasons for the choice of cartography rather than on the actual data.</li>
+            <li>The colors/hues are very similar and difficult to discern from one another.</li>
+            <li>Auxilliary layers such as the cities seem to have differing symbology without purpose.</li>
+            <li>There are simply too many labels to be useful.</li>
+          </ul>
+          <h4>Purpose</h4>
+          <ul>
+            <li>The desinger wanted to display a complex topic all in one map and caused an information overload.</li>
+            <li>Perhaps this map would be useful for someone who is an expert already in regional dialects but a woudl not be useful for a common reader.</li>
+            <li>At the same time, there is an impressive amount of data fit into this one map and there is a level of interactivity to it if you visit the site.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Example 2 -->
+      <div class="col-md-12">
+        <a href="http://readwrite.com/2009/08/11/10_ways_to_archive_your_tweets" target="_blank">
+          <h3>Twitter Pie Chart</h3>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <div>
+          <a href="http://readwrite.com/2009/08/11/10_ways_to_archive_your_tweets">
+            <img src="http://a2.files.readwrite.com/image/upload/c_fit,cs_srgb,w_620/MTIyNDM4MzQ3MjA0MzYyODU0.png" alt="Twitter Pie Chart." class="img-responsive"/>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div>
+          <h4>Summary</h4>
+          <p>
+            This pie chart is a good example of why you cannot always let a computer make design decision for you...
+          </p>
+          <h4>Design Choices</h4>
+          <ul>
+            <li>Pie chart with way too many data entities.</li>
+          </ul>
+          <h4>Reasoning for "Bad" Designation</h4>
+          <ul>
+            <li>There are far too many data entries.  This causes there to be too many colors and small slivers of the pie that are unable to be read correctly.</li>
+            <li>There are no percentages to determine what part of the whole a twitter account is taking up.</li>
+            <li>Since there are so many colors it is difficult to determine which twitter account links up to a sliver.</li>
+          </ul>
+          <h4>Purpose</h4>
+          <ul>
+            <li>To be fair, I am pretty sure this was a data dump from a program.  The purpose though is still difficult to grasp as software developers should have anticipated that the output would be generally unreadable with this many data entries.</li>
+            <li>All of tat aside, these data would probably be better visualized as a bar chart or something else.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- End Container -->
+  </div>
+
+  <!-- JS Imports -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/sorttable.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
